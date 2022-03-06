@@ -13,7 +13,6 @@ let getDate = (note) => {
     return new Date(note.updated).toLocaleDateString()
 }
 
-
 let getContent = (note) => {
     let title = getTitle(note)
     let content = note.body.replaceAll('\n'," ")
